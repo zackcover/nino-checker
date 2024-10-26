@@ -1,6 +1,8 @@
 {
   "name": "nino-checker",
   "version": "1.0.0",
+  "main": "src/utils/validateNINO.ts",
+  "types": "index.d.ts",
   "scripts": {
     "test": "jest"
   },
