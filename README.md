@@ -1,10 +1,10 @@
-# NINOCheck
+# NINO-Checker
 
-![npm](https://img.shields.io/npm/v/ninocheck) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
+![npm](https://img.shields.io/npm/v/nino-checker) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
 
 ## Overview
 
-NINOCheck is a lightweight and efficient JavaScript library designed to validate UK National Insurance Numbers (NINOs) accurately. Following HMRC guidelines, NINOCheck ensures that inputted NINOs are correctly formatted, validates prefixes, detects administrative numbers, and identifies Temporary Reference Numbers (TRNs) to offer comprehensive NINO validation.
+Nino-checker is a lightweight and efficient JavaScript library designed to validate UK National Insurance Numbers (NINOs) accurately. Following HMRC guidelines, nino-checker ensures that inputted NINOs are correctly formatted, validates prefixes, detects administrative numbers, and identifies Temporary Reference Numbers (TRNs) to offer comprehensive NINO validation.
 
 ## Features
 
@@ -17,17 +17,17 @@ NINOCheck is a lightweight and efficient JavaScript library designed to validate
 ## Installation
 Install the library via npm:
 ```bash
-npm install ninocheck
+npm install nino-checker
 ```
 Or using yarn:
 ```bash
-yarn add ninocheck
+yarn add nino-checker
 ```
 
 ## Usage
 ### Example: Validating a NINO
 ```javascript
-import { isValidNINO } from 'ninocheck';
+import { isValidNINO } from 'nino-checker';
 
 const result = isValidNINO('QQ123456A');
 if (result.isValid) {
@@ -38,7 +38,7 @@ if (result.isValid) {
 ```
 ### Example: Detecting a Temporary Reference Number (TRN)
 ```javascript
-import { isTRN } from 'ninocheck';
+import { isTRN } from 'nino-checker';
 
 const isTempReference = isTRN('11 a1 11 11');
 console.log(`Is TRN: ${isTempReference}`);
@@ -81,7 +81,7 @@ Checks if a given reference number is a Temporary Reference Number (TRN).
 4. Temporary Reference Numbers (TRN): Follows the format `11 a1 11 11` and is not treated as a valid NINO.
 
 ## Testing
-NINOCheck includes a complete test suite using [Jest](https://jestjs.io/). Tests cover valid and invalid NINO formats, administrative prefixes, TRNs, and specific error messages.
+nino-checker includes a complete test suite using [Jest](https://jestjs.io/). Tests cover valid and invalid NINO formats, administrative prefixes, TRNs, and specific error messages.
 To run tests, use:
 ```bash
 npm test
